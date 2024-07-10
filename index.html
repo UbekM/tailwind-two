@@ -1,0 +1,170 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7c5b46bc02.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="bg-violet-950">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-24 lg:py-2 lg:pt-3">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                      Icon when menu is closed.
+          
+                      Menu open: "hidden", Menu closed: "block"
+                    -->
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
+                      Icon when menu is open.
+          
+                      Menu open: "block", Menu closed: "hidden"
+                    -->
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center lg:justify-between lg:text-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex flex-shrink-0 items-center">
+              <img
+                class="h-14 w-auto"
+                src="https://mobirise.com/extensions/startupamp/assets/images/logo-1.png"
+                alt="Your Company"
+              />
+              <h1 class="text-white font-bold text-2xl ps-2">StartupAMP</h1>
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4 font-bold text-sm">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-3 font-bold text-white hover:bg-violet-950"
+                  aria-current="page"
+                  >HOME</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-3 text-white hover:bg-violet-950 hover:text-white"
+                  >MORE DEMOS <i class="fa-solid fa-caret-down pl-1"></i
+                ></a>
+
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-3 text-white hover:bg-violet-950 hover:text-white"
+                  >WATCH VIDEO</a
+                >
+                <a
+                  href="#"
+                  class="rounded-sm px-4 py-3 text-white bg-pink-500 hover:bg-red-800 hover:text-white"
+                  >BUY NOW</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="#"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            aria-current="page"
+            >Dashboard</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Team</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Calendar</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div
+      class="relative overflow-hidden h-screen flex text-center justify-center col-"
+    >
+      <img src="./assets/background1.jpg" class="w-full object-cover" />
+      <div
+        class="absolute top-0 h-screen w-full bg-gradient-to-r from-purple-400/50 to-purple-900 flex justify-center items-center flex-col lg:px-72"
+      >
+        <h1 class="text-white font-bold text-7xl pb-6">
+          Startup AMP HTML Template
+        </h1>
+        <div class="items-center flex gap-3 justify-center">
+          <button
+            class="text-white font-bold text-sm text-center bg-green-400 px-8 py-4 rounded-sm"
+          >
+            BUY NOW
+          </button>
+          <button
+            class="text-black font-bold text-sm g text-center bg-white px-8 py-4 rounded-sm"
+          >
+            DEMO PAGES
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
